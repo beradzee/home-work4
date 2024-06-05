@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: rgb(184, 184, 184);
+}
+
+.head {
+  width: 54rem;
+  height: 16.8rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head h3 {
+  font-weight: 275;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  color: rgba(77, 79, 98, 1);
+}
+.head h2 {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  color: rgba(77, 79, 98, 1);
+}
+.head p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: rgba(77, 79, 98, 1);
+}
+.box-container {
+  width: 110rem;
+  height: 53rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+.first-box {
+  width: 35rem;
+  height: 25rem;
+  background-color: white;
+  border-top: 4px solid rgba(68, 211, 210, 1);
+  border-radius: 1rem;
+
+  margin-top: 14rem;
+}
+.first-box h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.first-box p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+}
+.first-box img {
+  margin: 6rem 3.2rem 3.2rem 25.4rem;
+}
+.second-box h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.second-box p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+  width: 28.6rem;
+}
+.second-box img {
+  margin: 5rem 3.2rem 3.2rem 25.4rem;
+}
+.third-box h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.third-box p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+}
+.third-box img {
+  margin: 6rem 3.2rem 3.2rem 25.4rem;
+}
+.fourth-box h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(77, 79, 98, 1);
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.fourth-box p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: rgba(77, 79, 98, 1);
+
+}
+.fourth-box img {
+  margin: 5rem 3.2rem 3.2rem 25.4rem;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50%;
+}
+.second-box {
+  width: 35rem;
+  height: 25rem;
+
+  border-top: 4px solid rgb(211, 68, 68);
+  border-radius: 1rem;
+  background-color: white;
+}
+.third-box {
+  width: 35rem;
+  height: 25rem;
+  background-color: white;
+  border-top: 4px solid rgba(252, 174, 74, 1);
+  border-radius: 1rem;
+  grid-column-start: 2;
+  grid-row-start: 2 / 4;
+  margin-top: 3rem;
+}
+.fourth-box {
+  width: 35rem;
+  height: 25rem;
+  background-color: white;
+  border-top: 4px solid rgba(84, 158, 242, 1);
+  border-radius: 1rem;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  margin-top: 14rem;
+}
+@media screen and (max-width: 500px) {
+  .head {
+    width: 31.1rem;
+    height: 16.1rem;
+  }
+  .head h3 {
+    font-size: 2.9rem;
+  }
+  .head h2 {
+    font-size: 3rem;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 7rem;
+  }
+  .box-container div {
+    width: 31rem;
+    height: 22.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+  }
+  .box-container div img {
+    margin-left: 22rem;
+    margin-top: 3rem;
+  }
+}
